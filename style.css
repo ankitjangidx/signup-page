@@ -106,4 +106,27 @@ border-radius: 100px;
     right: 300px;
 
 }
+   @media (max-width: 400px) {
+  .inner-box {
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  .circle {
+    width: 40%;
+    height: 18%;
+  }
+}
+@media (max-width: 400px) {
+  .c1 {
+    top: 4%;
+   
+    left: -13%;
+  }
+  .c2 {
+    top: 61%;
+    right: -11%;
+  }
+}
+
    
