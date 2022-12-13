@@ -117,7 +117,7 @@ border-radius: 100px;
     height: 18%;
   }
 }
-@media (max-width: 532px) {
+/*@media (max-width: 532px) {
   .c1 {
     top: 4%;
    
@@ -127,5 +127,5 @@ border-radius: 100px;
     top: 61%;
     right: -11%;
    /* display: none;*/
-    }
-}
+    /*}*/
+/*}*/
