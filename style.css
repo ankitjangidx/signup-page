@@ -126,6 +126,6 @@ border-radius: 100px;
   .c2 {
     top: 61%;
     right: -11%;
-    display: none;
-  }
+   /* display: none;*/
+    }
 }
