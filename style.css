@@ -13,6 +13,8 @@ body {
 .outer-box {
     width: 100vw;
     height: 100vh;
+        overflow: hidden;
+
     background: linear-gradient(to top left, #3ed8ff, #a8f5ff);
 }
 
@@ -117,7 +119,7 @@ border-radius: 100px;
     height: 18%;
   }
 }
-/*@media (max-width: 532px) {
+@media (max-width: 532px) {
   .c1 {
     top: 4%;
    
@@ -126,6 +128,6 @@ border-radius: 100px;
   .c2 {
     top: 61%;
     right: -11%;
-   /* display: none;*/
-    /*}*/
-/*}*/
+   
+    }
+}
