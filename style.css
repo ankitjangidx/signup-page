@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 body {
+    overflow: hidden;
     font-family: 'Lato', sans-serif;
 }
 
@@ -14,20 +15,17 @@ body {
     width: 100vw;
     height: 100vh;
         overflow: hidden;
-
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
     background: linear-gradient(to top left, #3ed8ff, #a8f5ff);
 }
 
 .inner-box {
     width: 400px;
-    margin:0 auto;
-    position: relative;
-    top: 40%;
     padding: 20px 40px;
-    transform: translatey(-50%);
-    /* background-color: #ffffffcc; */
     background: linear-gradient(to top left,#ffffffff,#ffffff33);
-    /* backdrop-filter: blur(8px); */
     border-radius: 8px;
     box-shadow: 2px 2px 5px #2773a5;
     z-index: 1;
@@ -66,22 +64,15 @@ body {
     font-size: 1rem;
 }
 
-/* .signup-body p input[type="submit"] {
-background-color: #3498db;
-border: none; 
-} */
-.sumbit {
+.signup-body p input[type="submit"] {
     background-color: #3498db;
     border: none;
     color: white;
     cursor: pointer;
 }
 
-.sumbit:hover {
-    background-color: #148ada;
-    border: none;
-    color: white;
-    cursor: pointer;
+.signup-body p input[type="submit"]:hover {
+    background-color: #2773a5;
 }
 
 .signup-footer p {
@@ -100,34 +91,45 @@ border-radius: 100px;
   position: absolute;
 }
 .c1{
-    top:26px;
+    top:20px;
     left: 320px;
 }
 .c2{
-    top: 350px;
-    right: 300px;
+    bottom: 50px;
+    right: 330px;
 
 }
-   @media (max-width: 400px) {
-  .inner-box {
-    width: 90%;
-  }
-}
-@media (max-width: 400px) {
-  .circle {
-    width: 40%;
-    height: 18%;
-  }
-}
-@media (max-width: 532px) {
-  .c1 {
-    top: 4%;
-   
-    left: -13%;
-  }
-  .c2 {
-    top: 61%;
-    right: -11%;
-   
+   @media screen and (max-width:1024px){
+    .inner-box{
+        width: 370px;
     }
+    .circle{
+ width: 170px;
+ height: 170px;
+    }
+    .c1{
+        top:15px;
+        left: 220px;
+    }
+    .c2{
+        right: 220px;
+        bottom: 50px;
+   }
+   }
+@media screen and (max-width:480px){
+    .inner-box{
+        width: 330px;
+    }
+    .circle{
+        width: 120px;
+        height: 120px;
+           }
+           .c1{
+            top:10px;
+            left: 20px;
+        }
+        .c2{
+            right: 10px;
+            bottom: 10px;
+       }
 }
